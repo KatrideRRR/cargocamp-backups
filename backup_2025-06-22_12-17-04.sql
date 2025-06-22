@@ -158,7 +158,7 @@ CREATE TABLE `orders` (
   CONSTRAINT `orders_ibfk_4` FOREIGN KEY (`categoryId`) REFERENCES `category` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `orders_ibfk_5` FOREIGN KEY (`subcategoryId`) REFERENCES `subcategory` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `orders_ibfk_6` FOREIGN KEY (`serviceId`) REFERENCES `services` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -167,6 +167,7 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
+INSERT INTO `orders` VALUES (1,'балакаклавская стрит  → проспект непобедимых ','ке',NULL,2500,'51.1249,-2.728992',2,'expired',NULL,2,'[]',NULL,NULL,'2025-06-17 08:13:31',12,67,'[]','pending','cash','[]',NULL,0,0,0,1,NULL,0),(2,'село Мирное','Сосат','2025-06-19 05:45:00',6666,'44.97943,34.065229',1,'expired',NULL,1,'[]','[\"/uploads/orders/1750308453128\"]',NULL,'2025-06-19 04:47:33',16,169,'[]','pending','cash','[]',NULL,0,0,0,0,4,0),(3,'село Мирное','ыва','2025-06-21 07:00:00',123,'44.97943,34.065229',1,'expired',NULL,1,'[]','[\"/uploads/orders/1750488370628\"]',NULL,'2025-06-21 06:46:10',15,87,'[]','pending','cash','[]',NULL,0,0,0,0,NULL,0);
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -260,7 +261,7 @@ CREATE TABLE `users` (
   `updatedAt` datetime NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `phone` (`phone`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -269,6 +270,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'Akim','+7 (978) 686-41-18','$2b$10$FrPJb3aajehUslWpPG918u6VHIngd3Y4aXrxsx6ZBeea/RYvx.vbu',0,0,0,'[]','[]','user','unverified',NULL,NULL,NULL,NULL,'premium','2025-06-21 07:38:00',0,'2025-06-14 07:38:01','2025-06-14 07:38:01'),(2,'emir','+7 (978) 080-16-37','$2b$10$T5KcvkW3/phKubrYf1J0CuMdkSMv99iYqjdT5T/8BePKVx7ZA23eS',0,0,0,'[]','[]','user','unverified',NULL,NULL,NULL,NULL,'premium','2025-06-24 08:12:51',0,'2025-06-17 08:12:52','2025-06-17 08:12:52');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -281,4 +283,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-06-13 19:36:16
+-- Dump completed on 2025-06-22 12:17:04
