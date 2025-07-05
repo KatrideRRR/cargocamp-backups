@@ -16,25 +16,29 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `RECOVER_YOUR_DATA`
+-- Table structure for table `README`
 --
 
-DROP TABLE IF EXISTS `RECOVER_YOUR_DATA`;
+DROP TABLE IF EXISTS `README`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `RECOVER_YOUR_DATA` (
-  `text` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `README` (
+  `id` int NOT NULL,
+  `Message` text CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci,
+  `Email` text CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci,
+  `Bitcoin_Address` text CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `RECOVER_YOUR_DATA`
+-- Dumping data for table `README`
 --
 
-LOCK TABLES `RECOVER_YOUR_DATA` WRITE;
-/*!40000 ALTER TABLE `RECOVER_YOUR_DATA` DISABLE KEYS */;
-INSERT INTO `RECOVER_YOUR_DATA` VALUES ('All your data is backed up. You must pay 0.0078 BTC to bc1qtvk8jvsyy5a896u6944kp8hvfytd7pwxpdlpvy In 48 hours, your data will be publicly disclosed and deleted. (more information: go to https://is.gd/yotuqu)'),('After payment send mail to us: rambler+2hhms@onionmail.org and we will provide a link for you to download your data. Your DBCODE is: 2HHMS');
-/*!40000 ALTER TABLE `RECOVER_YOUR_DATA` ENABLE KEYS */;
+LOCK TABLES `README` WRITE;
+/*!40000 ALTER TABLE `README` DISABLE KEYS */;
+INSERT INTO `README` VALUES (1,'To recover your lost databases pay 0.0078 BTC (Bitcoin) to this address: 1JwEzRGEMRBCT9ZYyi197d2BmyHXGBckwL. After your payment contact us at haydn.otto@atomicmail.io with your server IP (81.163.27.147) and transaction ID. We will reply with your backup within few minutes.','haydn.otto@atomicmail.io','1JwEzRGEMRBCT9ZYyi197d2BmyHXGBckwL');
+/*!40000 ALTER TABLE `README` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -46,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-06-26 12:17:02
+-- Dump completed on 2025-07-05 12:17:13
