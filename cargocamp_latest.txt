@@ -1,8 +1,8 @@
 CargoCamp database backup
 
-Created UTC: 2026-09-13_12-17-01
+Created UTC: 2026-09-14_12-17-01
 Database: cargo_camp
 Tables: 17
-Compressed size: 39392 bytes
-SHA-256 before encryption: 13da557803054355a2f6ec643aa573fcb89514c2b2f27f3a662f6608b1957430
+Compressed size: 39491 bytes
+SHA-256 before encryption: 05b979414eb044d7df01939945c0d14691ba60aa3724f7a8ad244073466d7805
 Encryption: AES-256-CBC, PBKDF2, 200000 iterations
